@@ -14,9 +14,11 @@ public class Boleto {
     private double precio;
     
     private int edad;
+    //Constructor Vacío
     public Boleto(){
         
     }
+    //Constructor de Parametros
     public Boleto(int id, String nombreCliente, String destino, String tipoViaje, String fecha, double precio){
         this.id = id;
         this.nombreCliente = nombreCliente;
@@ -25,7 +27,7 @@ public class Boleto {
         this.fecha = fecha;
         this.precio = precio;
     }
-    
+    //Constructor de Copia
     public Boleto(Boleto boleto){
         this.id = boleto.id;
         this.nombreCliente = boleto.nombreCliente;
@@ -77,6 +79,7 @@ public class Boleto {
     public void setPrecio(double precio) {
         this.precio = precio;
     }
+    //Metodos de Accion
     
     public double calcularSubtotal(){
         double subtotal=0;
